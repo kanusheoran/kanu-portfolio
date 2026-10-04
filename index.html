@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanu Sheoran | Code · Cloud · Creativity | Portfolio</title>
+  <meta name="description" content="Portfolio of Kanu Sheoran - Computer Science Engineering Student specializing in Cloud Computing at Lovely Professional University. Explore projects in C++, Cloud, Web Dev, and AI.">
+  <meta name="keywords" content="Kanu Sheoran, Cloud Computing, Portfolio, Web Developer, Lovely Professional University, C++, GCP, BigQuery, React">
+  <meta name="author" content="Kanu Sheoran">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kanu Sheoran — Portfolio">
+  <meta property="og:description" content="Code · Cloud · Creativity | B.Tech CSE (Cloud Computing) at Lovely Professional University">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Grid & Floating Decorative Elements -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Top Announcement / Status Bar -->
+  <div class="top-status-bar">
+    <div class="status-container">
+      <span class="status-indicator">
+        <span class="status-dot"></span> Available for Web & Cloud Projects · Class of 2028
+      </span>
+      <span class="status-tag">📍 India · Lovely Professional University</span>
+      <div class="status-actions">
+        <span id="liveClock" class="status-clock" title="Local Time in India">🕒 IST: --:--:--</span>
+        <a href="#contact" class="status-link">Let's Connect →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="siteHeader">
+    <!-- Top Scroll Progress Bar -->
+    <div class="scroll-progress-track" aria-hidden="true">
+      <div id="scrollProgressBar" class="scroll-progress-fill"></div>
+    </div>
+
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Kanu Sheoran Home">
+        <span class="folder-icon-mini">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        </span>
+        <div class="brand-text">
+          <span class="brand-name">KANU SHEORAN</span>
+          <span class="brand-sub">Code · Cloud · Creativity</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#leadership" class="nav-link">Leadership</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#leadership" class="mobile-link">Leadership</a></li>
+        <li><a href="#interests" class="mobile-link">Interests</a></li>
+        <li><a href="#contact" class="mobile-link mobile-link-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (Folder / Dossier Editorial Style) -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Folder Window Container -->
+        <div class="dossier-folder">
+          
+          <!-- Folder Tabs Header -->
+          <div class="folder-tabs-header">
+            <button class="folder-tab active" data-folder-tab="main" title="Main Portfolio Dossier">
+              <span class="tab-badge">2024–2028</span>
+              <span class="tab-title">📂 kanu-portfolio.cloud</span>
+            </button>
+            <button class="folder-tab secondary-tab hide-mobile" data-folder-tab="cloud" title="Cloud Environment Spec">
+              <span class="tab-title">☁️ cloud-computing.env</span>
+            </button>
+            <button class="folder-tab secondary-tab hide-mobile" data-folder-tab="creativity" title="Creative Space">
+              <span class="tab-title">⚡ creativity.tsx</span>
+            </button>
+            <div class="folder-controls">
+              <span class="ctrl-dot red" title="Terminal mode"></span>
+              <span class="ctrl-dot yellow" title="Cloud specs"></span>
+              <span class="ctrl-dot green" title="Creative space"></span>
+            </div>
+          </div>
+
+          <!-- Folder Main Body -->
+          <div class="folder-body">
+            
+            <div class="hero-grid">
+              
+              <!-- Left Column: Typography & Bio -->
+              <div class="hero-content">
+                <div class="hero-tag-wrapper">
+                  <span class="pill-badge pill-blue">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    B.Tech CSE (Cloud Computing)
+                  </span>
+                  <span class="pill-badge pill-outline">Lovely Professional University</span>
+                </div>
+
+                <h1 class="hero-title">
+                  <span class="hero-sup">HI, I'M</span>
+                  <span class="hero-name">KANU <span class="highlight-serif">SHEORAN</span></span>
+                </h1>
+
+                <div class="hero-tagline-box">
+                  <span class="tagline-chip">Code</span>
+                  <span class="tagline-sep">·</span>
+                  <span class="tagline-chip">Cloud</span>
+                  <span class="tagline-sep">·</span>
+                  <span class="tagline-chip">Creativity</span>
+                </div>
+
+                <p class="hero-bio">
+                  Computer Science Engineering student specializing in <strong>Cloud Computing</strong>, actively exploring software development, distributed web architectures, cloud infrastructure, and creative problem-solving.
+                </p>
+
+                <div class="hero-cta-group">
+                  <a href="#projects" class="btn btn-primary">
+                    <span>Explore Projects</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="#contact" class="btn btn-secondary">
+                    <span>Get in Touch</span>
+                  </a>
+                  <a href="https://github.com/kanu-sheoran" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/kanu-sheoran/" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="LinkedIn Profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </a>
+
+                  <!-- Hand-drawn Doodle Note from Reference Image 3 -->
+                  <div class="doodle-cta-arrow">
+                    <svg class="doodle-curve-svg" width="34" height="26" viewBox="0 0 40 30" fill="none">
+                      <path d="M4,4 Q18,26 34,14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                      <path d="M26,13 L34,14 L30,22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="handwritten-scribble">start here! 🚀</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Interactive Card Dossier (Aesthetic Folder Stack from reference) -->
+              <div class="hero-visual-card">
+                <div class="profile-folder-card">
+                  
+                  <div class="card-top-tab">
+                    <span class="file-label">ID_CARD_2028.cfg</span>
+                    <span class="stamp-badge">VERIFIED STUDENT</span>
+                  </div>
+
+                  <div class="profile-inner-content">
+                    <div class="avatar-frame">
+                      <div class="avatar-graphic has-image">
+                        <img src="assets/avatar.jpg" alt="Kanu Sheoran Avatar" class="avatar-img-circle" />
+                        <span class="avatar-status-badge" title="Online & Coding"></span>
+                      </div>
+                      <div class="avatar-meta">
+                        <h2 class="card-name">Kanu Sheoran</h2>
+                        <span class="card-role">Cloud & Web Engineer</span>
+                        <span class="card-loc">🇮🇳 Lovely Professional University</span>
+                      </div>
+                    </div>
+
+                    <!-- Highlight Metrics Strip (Like reference image +50%, +120%) -->
+                    <div class="metrics-row">
+                      <div class="metric-box interactive-stat" data-stat="reach">
+                        <span class="metric-val count-up" data-target="50" data-prefix="+" data-suffix="%">+50%</span>
+                        <span class="metric-label">Social Reach</span>
+                      </div>
+                      <div class="metric-box interactive-stat" data-stat="projects">
+                        <span class="metric-val count-up" data-target="5" data-prefix="0">05</span>
+                        <span class="metric-label">Key Projects</span>
+                      </div>
+                      <div class="metric-box interactive-stat" data-stat="grad">
+                        <span class="metric-val count-up" data-target="2028">2028</span>
+                        <span class="metric-label">Class of 2028</span>
+                      </div>
+                    </div>
+
+                    <!-- Interactive Quick Terminal View with Clickable Commands -->
+                    <div class="mini-terminal" id="heroTerminal">
+                      <div class="term-header">
+                        <span class="term-title">terminal — zsh · interactive</span>
+                        <span class="term-status"><span class="pulse-beacon"></span> ONLINE</span>
+                      </div>
+                      <div class="term-chips-bar">
+                        <span class="term-chip-label">Run:</span>
+                        <button class="term-chip-btn" data-cmd="whoami">whoami</button>
+                        <button class="term-chip-btn" data-cmd="cloud">gcloud</button>
+                        <button class="term-chip-btn" data-cmd="quote">quote</button>
+                        <button class="term-chip-btn" data-cmd="clear">clear</button>
+                      </div>
+                      <div class="term-code" id="terminalOutput">
+                        <p class="term-line"><span class="term-prompt">$</span> cat focus_areas.json</p>
+                        <p class="term-output">{ "focus": ["Cloud Computing", "C++ Systems", "Web Architecture", "UI Design"] }</p>
+                        <p class="term-line"><span class="term-prompt">$</span> gcloud --version</p>
+                        <p class="term-output">Google Cloud SDK (GCP · BigQuery · Compute Engine)</p>
+                      </div>
+                    </div>
+
+                    <!-- Floating folder stickers (clickable with bounce animation!) -->
+                    <div class="floating-sticker sticker-1 interactive-sticker" title="Click me!">
+                      <span>☁️ GCP Cloud</span>
+                    </div>
+                    <div class="floating-sticker sticker-2 interactive-sticker" title="Click me!">
+                      <span>⚡ C++ & DSA</span>
+                    </div>
+                    <div class="floating-sticker sticker-3 interactive-sticker" title="Click me!">
+                      <span>🎨 Creative Tech</span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Quick Info Bar -->
+            <div class="folder-bottom-ribbon">
+              <div class="ribbon-item">
+                <span class="ribbon-icon">🎓</span>
+                <span class="ribbon-text"><strong>B.Tech CSE</strong> — Lovely Professional University</span>
+              </div>
+              <div class="ribbon-sep">/</div>
+              <div class="ribbon-item">
+                <span class="ribbon-icon">💼</span>
+                <span class="ribbon-text"><strong>C-Summit 2025</strong> — Freelance Web & Cloud Dev</span>
+              </div>
+              <div class="ribbon-sep">/</div>
+              <div class="ribbon-item">
+                <span class="ribbon-icon">🎤</span>
+                <span class="ribbon-text"><strong>TEDxLPU Women 2025</strong> — Sponsorship & Partnerships</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (Visual & Interactive Dossier) -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header-tab">
+          <div class="tab-ear">01 // ABOUT ME · VISUAL DOSSIER</div>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Architecting Systems with a <span class="highlight-serif">Creative Core</span></h2>
+          <p class="section-sub">A visual snapshot of who I am, what I build, and what drives my curiosity.</p>
+        </div>
+
+        <div class="about-bento-grid">
+          
+          <!-- Column 1: Animated Interactive Avatar Card -->
+          <div class="binder-card avatar-showcase-card">
+            
+            <div class="avatar-card-topbar">
+              <span class="avatar-card-tag">KANU_PROFILE.v2</span>
+              <span class="live-status-pill">
+                <span class="live-dot"></span> Online & Exploring
+              </span>
+            </div>
+
+            <div class="avatar-stage">
+              <!-- Animated Avatar Frame -->
+              <div class="avatar-circle-wrapper" id="avatarCircle">
+                <img src="assets/avatar.jpg" alt="Kanu Sheoran Illustrated Avatar" class="avatar-visual-img" />
+                <div class="avatar-glow-ring"></div>
+              </div>
+
+              <!-- Floating Animated Doodle Stickers (Referencing user's illustration!) -->
+              <div class="avatar-sticker sticker-flower interactive-easter-egg" id="flowerEasterEgg" title="Click me for a flower shower! 🌼">🌼</div>
+              <div class="avatar-sticker sticker-star-1" title="Dream Big">⭐</div>
+              <div class="avatar-sticker sticker-star-2" title="Building Daily">✨</div>
+              <div class="avatar-sticker sticker-badge-cloud">☁️ GCP Cloud</div>
+              <div class="avatar-sticker sticker-badge-code">&lt;C++ /&gt;</div>
+
+              <!-- Interactive Speech Bubble -->
+              <div class="speech-bubble-box" id="avatarSpeechBubble">
+                <span class="speech-tail"></span>
+                <p id="avatarSpeechText">"Hi there! I'm Kanu — turning logic into code & ideas into reality ✨"</p>
+              </div>
+            </div>
+
+            <!-- Interactive Mode Switcher -->
+            <div class="avatar-modes-container">
+              <span class="modes-label">EXPLORE MY MODES:</span>
+              <div class="avatar-modes-btns">
+                <button class="avatar-mode-btn active" data-mode="dev" title="Software Developer Mode">
+                  <span class="mode-icon">⚡</span> Developer
+                </button>
+                <button class="avatar-mode-btn" data-mode="cloud" title="Cloud Computing Mode">
+                  <span class="mode-icon">☁️</span> Cloud
+                </button>
+                <button class="avatar-mode-btn" data-mode="creative" title="Creative & Leadership Mode">
+                  <span class="mode-icon">🎨</span> Creative
+                </button>
+              </div>
+            </div>
+
+            <!-- Quick Identity Badge -->
+            <div class="avatar-id-footer">
+              <div class="id-item">
+                <span class="id-label">DEGREE</span>
+                <span class="id-val">B.Tech CSE '28</span>
+              </div>
+              <div class="id-divider"></div>
+              <div class="id-item">
+                <span class="id-label">FOCUS</span>
+                <span class="id-val">Cloud Systems</span>
+              </div>
+              <div class="id-divider"></div>
+              <div class="id-item">
+                <span class="id-label">CAMPUS</span>
+                <span class="id-val">LPU Punjab</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Column 2: Visual Bento Cards (Punchy & Bite-Sized) -->
+          <div class="about-right-bento">
+            
+            <!-- Bento 1: Punchy Bio & Badges -->
+            <div class="binder-card bento-summary-card">
+              <div class="card-header-sub">
+                <span class="card-num">01.1</span>
+                <span class="card-cat">CORE SNAPSHOT</span>
+              </div>
+              <h3 class="bento-title">Cloud Enthusiast · Builder · Problem Solver</h3>
+              <p class="bento-desc">
+                Computer Science Engineering student at <strong>Lovely Professional University</strong> ('28) specializing in <strong>Cloud Computing</strong>. I craft algorithmic software, explore resilient cloud environments, and lead community initiatives.
+              </p>
+
+              <div class="quick-pill-tags">
+                <span class="q-pill"><span class="q-dot blue"></span> Google Cloud Platform</span>
+                <span class="q-pill"><span class="q-dot orange"></span> C++ & DSA</span>
+                <span class="q-pill"><span class="q-dot green"></span> Full-Stack Web</span>
+                <span class="q-pill"><span class="q-dot purple"></span> TEDx & Brand Strategy</span>
+              </div>
+            </div>
+
+            <!-- Bento 2: Three Pillars Visual Cards -->
+            <div class="pillars-visual-grid">
+              
+              <div class="pillar-mini-card" data-tilt>
+                <div class="pillar-mini-icon">💻</div>
+                <div class="pillar-mini-body">
+                  <h4>Code</h4>
+                  <p>High-efficiency algorithms in C++, Java, Python, and dynamic React web apps.</p>
+                </div>
+              </div>
+
+              <div class="pillar-mini-card" data-tilt>
+                <div class="pillar-mini-icon">☁️</div>
+                <div class="pillar-mini-body">
+                  <h4>Cloud</h4>
+                  <p>GCP, Compute Engine, BigQuery, network monitoring, and cloud data workflows.</p>
+                </div>
+              </div>
+
+              <div class="pillar-mini-card" data-tilt>
+                <div class="pillar-mini-icon">✨</div>
+                <div class="pillar-mini-body">
+                  <h4>Creativity</h4>
+                  <p>Digital marketing (+50% reach), TEDx partnerships, poetry, and design thinking.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bento 3: Languages & Location Strip -->
+            <div class="binder-card bento-languages-card">
+              <div class="card-header-sub">
+                <span class="card-num">01.2</span>
+                <span class="card-cat">LANGUAGES & GLOBAL OUTLOOK</span>
+              </div>
+
+              <div class="languages-visual-row">
+                <div class="lang-capsule">
+                  <span class="lang-flag">🇬🇧</span>
+                  <div class="lang-details">
+                    <span class="lang-title">English</span>
+                    <span class="lang-level-tag fluent">Fluent</span>
+                  </div>
+                </div>
+
+                <div class="lang-capsule">
+                  <span class="lang-flag">🇮🇳</span>
+                  <div class="lang-details">
+                    <span class="lang-title">Hindi</span>
+                    <span class="lang-level-tag proficient">Proficient</span>
+                  </div>
+                </div>
+
+                <div class="lang-capsule">
+                  <span class="lang-flag">🇪🇸</span>
+                  <div class="lang-details">
+                    <span class="lang-title">Spanish</span>
+                    <span class="lang-level-tag learning">Learning</span>
+                  </div>
+                </div>
+
+                <div class="lang-capsule">
+                  <span class="lang-flag">🇩🇪</span>
+                  <div class="lang-details">
+                    <span class="lang-title">German</span>
+                    <span class="lang-level-tag learning">Learning</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="doodle-note">
+                <span class="doodle-arrow">↘</span>
+                <span class="doodle-text">Based in India · Open to global remote collaborations & engineering internships!</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <div class="section-header-tab">
+          <div class="tab-ear">02 // ACADEMIC FOUNDATION</div>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Education & <span class="highlight-serif">Core Coursework</span></h2>
+          <p class="section-sub">Formal computer science training rooted in software engineering, cloud systems, and algorithmic theory.</p>
+        </div>
+
+        <!-- Academic Dossier Card -->
+        <div class="education-dossier">
+          <div class="edu-top-row">
+            <div class="edu-badge-tag">DEGREE PROGRAM</div>
+            <div class="edu-timeline">2024 — 2028 (Currently Enrolled)</div>
+          </div>
+
+          <div class="edu-main-content">
+            <div class="edu-institution-box">
+              <div class="edu-icon-shield">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div>
+                <h3 class="edu-degree">B.Tech in Computer Science Engineering</h3>
+                <h4 class="edu-spec">Specialization in Cloud Computing</h4>
+                <p class="edu-college">Lovely Professional University (LPU), Punjab, India</p>
+              </div>
+            </div>
+
+            <div class="edu-overview-text">
+              <p>
+                Pursuing an intensive undergraduate engineering curriculum emphasizing modern distributed computing, operating systems, cloud architecture, and data engineering. Actively synthesizing classroom theoretical principles into production-ready software and community initiatives.
+              </p>
+            </div>
+
+            <!-- Coursework Area Chips (from prompt) -->
+            <div class="coursework-section">
+              <h4 class="coursework-title">RELEVANT CURRICULUM & CORE DISCIPLINES</h4>
+              <div class="chips-container">
+                <span class="course-chip">
+                  <span class="chip-dot"></span> Data Structures & Algorithms
+                </span>
+                <span class="course-chip">
+                  <span class="chip-dot"></span> Operating Systems
+                </span>
+                <span class="course-chip">
+                  <span class="chip-dot"></span> Database Management (DBMS)
+                </span>
+                <span class="course-chip">
+                  <span class="chip-dot"></span> Web Development
+                </span>
+                <span class="course-chip">
+                  <span class="chip-dot"></span> Cloud Computing
+                </span>
+                <span class="course-chip">
+                  <span class="chip-dot"></span> Google Cloud Platform (GCP)
+                </span>
+                <span class="course-chip">
+                  <span class="chip-dot"></span> Big Data Technologies
+                </span>
+                <span class="course-chip">
+                  <span class="chip-dot"></span> BigQuery Analytics
+                </span>
+                <span class="course-chip">
+                  <span class="chip-dot"></span> Software Engineering
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header-tab">
+          <div class="tab-ear">03 // TOOLKIT & COMPETENCIES</div>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Technical Skills & <span class="highlight-serif">Explorer Stack</span></h2>
+          <p class="section-sub">From low-level systems and cloud platforms to interactive user interfaces and creative software.</p>
+        </div>
+
+        <!-- Skills Category Tabs Filter -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skills Filter">
+          <button class="filter-tab-btn active" data-skill-tab="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-tab-btn" data-skill-tab="programming" role="tab" aria-selected="false">Programming</button>
+          <button class="filter-tab-btn" data-skill-tab="web" role="tab" aria-selected="false">Web Dev</button>
+          <button class="filter-tab-btn" data-skill-tab="cloud" role="tab" aria-selected="false">Cloud & Data</button>
+          <button class="filter-tab-btn" data-skill-tab="tools" role="tab" aria-selected="false">Tools & Design</button>
+          <button class="filter-tab-btn" data-skill-tab="exploring" role="tab" aria-selected="false">Currently Exploring</button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid" id="skillsGrid">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card" data-category="programming">
+            <div class="cat-header">
+              <span class="cat-icon">⚙️</span>
+              <h3 class="cat-title">Programming Languages</h3>
+            </div>
+            <p class="cat-desc">Core programming languages utilized for system algorithms, object-oriented software, and scripting.</p>
+            <div class="tech-pills-list">
+              <div class="tech-pill">
+                <span class="tech-name">C++</span>
+                <span class="tech-tag">DSA & Systems</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">Java</span>
+                <span class="tech-tag">OOP & Backend</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">Python</span>
+                <span class="tech-tag">Scripting & Data</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">JavaScript</span>
+                <span class="tech-tag">Full-Stack & ES6+</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-category-card" data-category="web">
+            <div class="cat-header">
+              <span class="cat-icon">🌐</span>
+              <h3 class="cat-title">Web Development</h3>
+            </div>
+            <p class="cat-desc">Building responsive, accessible, interactive web interfaces and dynamic front-end experiences.</p>
+            <div class="tech-pills-list">
+              <div class="tech-pill">
+                <span class="tech-name">HTML5</span>
+                <span class="tech-tag">Semantic Structure</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">CSS3</span>
+                <span class="tech-tag">Flexbox & Grid</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">JavaScript</span>
+                <span class="tech-tag">DOM & Async</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">React</span>
+                <span class="tech-tag">Components & State</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Cloud & Data -->
+          <div class="skill-category-card" data-category="cloud">
+            <div class="cat-header">
+              <span class="cat-icon">☁️</span>
+              <h3 class="cat-title">Cloud & Data Infrastructure</h3>
+            </div>
+            <p class="cat-desc">Specialized cloud infrastructure, big data warehousing, and scalable database backends.</p>
+            <div class="tech-pills-list">
+              <div class="tech-pill highlight-pill">
+                <span class="tech-name">Google Cloud Platform (GCP)</span>
+                <span class="tech-tag">Specialization</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">Compute Engine (GCE)</span>
+                <span class="tech-tag">Virtual Machines</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">BigQuery</span>
+                <span class="tech-tag">Data Warehousing</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">Cloud SDK</span>
+                <span class="tech-tag">gcloud CLI</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">MongoDB</span>
+                <span class="tech-tag">NoSQL Database</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">Firebase</span>
+                <span class="tech-tag">Realtime & Firestore</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Creative Design -->
+          <div class="skill-category-card" data-category="tools">
+            <div class="cat-header">
+              <span class="cat-icon">🛠️</span>
+              <h3 class="cat-title">Tools & Design Software</h3>
+            </div>
+            <p class="cat-desc">Version control, network simulation, UI wireframing, and creative brand production suites.</p>
+            <div class="tech-pills-list">
+              <div class="tech-pill">
+                <span class="tech-name">Git & GitHub</span>
+                <span class="tech-tag">Version Control</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">VS Code</span>
+                <span class="tech-tag">Dev Environment</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">Cisco Packet Tracer</span>
+                <span class="tech-tag">Network Simulation</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">Figma</span>
+                <span class="tech-tag">UI/UX Wireframing</span>
+              </div>
+              <div class="tech-pill">
+                <span class="tech-name">Adobe Express</span>
+                <span class="tech-tag">Graphic Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Currently Exploring -->
+          <div class="skill-category-card exploring-card" data-category="exploring">
+            <div class="cat-header">
+              <span class="cat-icon">🚀</span>
+              <h3 class="cat-title">Currently Learning & Exploring</h3>
+            </div>
+            <p class="cat-desc">Active self-study subjects, emerging frameworks, and engineering frontiers I am exploring right now.</p>
+            <div class="exploring-tags">
+              <span class="explore-bubble">Google Cloud Advanced</span>
+              <span class="explore-bubble">DevOps Practices</span>
+              <span class="explore-bubble">React Ecosystem</span>
+              <span class="explore-bubble">Advanced DSA</span>
+              <span class="explore-bubble">Big Data Pipelines</span>
+              <span class="explore-bubble">Creative Technology</span>
+              <span class="explore-bubble">UI/UX & Branding</span>
+              <span class="explore-bubble">Digital Design</span>
+            </div>
+          </div>
+
+          <!-- Category 6: Core Engineering Concepts -->
+          <div class="skill-category-card" data-category="programming">
+            <div class="cat-header">
+              <span class="cat-icon">🧠</span>
+              <h3 class="cat-title">Core Engineering Foundations</h3>
+            </div>
+            <p class="cat-desc">Theoretical rigor underpinning high performance software engineering.</p>
+            <div class="tech-pills-list">
+              <div class="tech-pill"><span class="tech-name">Data Structures & Algorithms</span></div>
+              <div class="tech-pill"><span class="tech-name">Operating Systems Architecture</span></div>
+              <div class="tech-pill"><span class="tech-name">Database Management Systems</span></div>
+              <div class="tech-pill"><span class="tech-name">Software Development Lifecycle</span></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header-tab">
+          <div class="tab-ear">04 // CODE REPOSITORIES</div>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Featured Projects & <span class="highlight-serif">Case Studies</span></h2>
+          <p class="section-sub">Explore software projects spanning systems programming in C++, cloud monitoring, responsive web apps, and collaborative AI.</p>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="projects-filter-bar">
+          <button class="proj-filter-btn active" data-filter="all">All Projects (5)</button>
+          <button class="proj-filter-btn" data-filter="systems">C++ & Systems</button>
+          <button class="proj-filter-btn" data-filter="web">Web & UI</button>
+          <button class="proj-filter-btn" data-filter="cloud">Cloud & Network</button>
+          <button class="proj-filter-btn" data-filter="ai">AI</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          
+          <!-- Project 01: Smart Parking -->
+          <article class="project-card" data-proj-type="systems">
+            <div class="proj-header-bar">
+              <div class="proj-num">PROJECT_01</div>
+              <span class="proj-badge badge-cpp">C++ Systems</span>
+            </div>
+            
+            <div class="proj-content">
+              <h3 class="proj-title">Smart Parking Slot Allocation System</h3>
+              <p class="proj-repo">kanu-sheoran / smart-parking-summer-project</p>
+              
+              <p class="proj-desc">
+                A C++-based Smart Parking Slot Allocation System designed to manage parking slots and efficiently allocate them to vehicles using foundational data structures and algorithms. Built as an intensive summer engineering project.
+              </p>
+
+              <div class="proj-concepts">
+                <span class="concepts-label">Core Concepts Implemented:</span>
+                <div class="concepts-tags">
+                  <span class="c-tag">Arrays</span>
+                  <span class="c-tag">Linked Lists</span>
+                  <span class="c-tag">Queues</span>
+                  <span class="c-tag">Priority Queues</span>
+                  <span class="c-tag">Searching</span>
+                  <span class="c-tag">Sorting</span>
+                </div>
+              </div>
+
+              <div class="proj-footer">
+                <div class="proj-tech-stack">
+                  <span class="tech-icon-pill">C++</span>
+                  <span class="tech-icon-pill">CLI Architecture</span>
+                  <span class="tech-icon-pill">DSA</span>
+                </div>
+                <div class="proj-actions">
+                  <a href="https://github.com/kanu-sheoran/smart-parking-summer-project" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View Smart Parking on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: PawBites Treat -->
+          <article class="project-card" data-proj-type="web">
+            <div class="proj-header-bar">
+              <div class="proj-num">PROJECT_02</div>
+              <span class="proj-badge badge-web">Front-End & UI</span>
+            </div>
+            
+            <div class="proj-content">
+              <h3 class="proj-title">PawBites Treat — Pet Care Experience</h3>
+              <p class="proj-repo">kanu-sheoran / pawbites-treat</p>
+              
+              <p class="proj-desc">
+                A pet-treat themed front-end web application combining responsive layout design, interactive JavaScript elements, and warm visual branding tailored for pet lovers. Focuses on delightful user experience and component design.
+              </p>
+
+              <div class="proj-concepts">
+                <span class="concepts-label">Key Focus Areas:</span>
+                <div class="concepts-tags">
+                  <span class="c-tag">UI/UX Design</span>
+                  <span class="c-tag">Responsive Layout</span>
+                  <span class="c-tag">JavaScript Interactions</span>
+                  <span class="c-tag">Visual Branding</span>
+                </div>
+              </div>
+
+              <div class="proj-footer">
+                <div class="proj-tech-stack">
+                  <span class="tech-icon-pill">HTML5</span>
+                  <span class="tech-icon-pill">CSS3</span>
+                  <span class="tech-icon-pill">JavaScript</span>
+                </div>
+                <div class="proj-actions">
+                  <a href="https://github.com/kanu-sheoran/pawbites-treat" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View PawBites on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: Smart Network Monitoring System -->
+          <article class="project-card" data-proj-type="cloud">
+            <div class="proj-header-bar">
+              <div class="proj-num">PROJECT_03</div>
+              <span class="proj-badge badge-cloud">Cloud & Infrastructure</span>
+            </div>
+            
+            <div class="proj-content">
+              <h3 class="proj-title">Smart Network Monitoring System for Cloud</h3>
+              <p class="proj-repo">satyanshcancode / Smart-Network-Monitoring-System-for-Cloud-Environments</p>
+              
+              <p class="proj-desc">
+                A system focused on monitoring network activity and performance within cloud environments. Provides visibility into network traffic anomalies, latency metrics, and distributed infrastructure health.
+              </p>
+
+              <div class="proj-concepts">
+                <span class="concepts-label">Domain Disciplines:</span>
+                <div class="concepts-tags">
+                  <span class="c-tag">Cloud Computing</span>
+                  <span class="c-tag">Network Monitoring</span>
+                  <span class="c-tag">Infrastructure Telemetry</span>
+                  <span class="c-tag">Network Performance</span>
+                </div>
+              </div>
+
+              <div class="proj-footer">
+                <div class="proj-tech-stack">
+                  <span class="tech-icon-pill">Cloud Network</span>
+                  <span class="tech-icon-pill">Performance Metrics</span>
+                  <span class="tech-icon-pill">GCP Concepts</span>
+                </div>
+                <div class="proj-actions">
+                  <a href="https://github.com/satyanshcancode/Smart-Network-Monitoring-System-for-Cloud-Environments" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View Network Monitor on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04: Earn-Ed -->
+          <article class="project-card" data-proj-type="web">
+            <div class="proj-header-bar">
+              <div class="proj-num">PROJECT_04</div>
+              <span class="proj-badge badge-web">Educational Platform</span>
+            </div>
+            
+            <div class="proj-content">
+              <h3 class="proj-title">Earn-Ed — Interactive Learning Platform</h3>
+              <p class="proj-repo">kanu-sheoran / earn-ed</p>
+              
+              <p class="proj-desc">
+                An educational platform and web application engineered to combine student learning with practical opportunities, skill tasks, and real-world student engagement.
+              </p>
+
+              <div class="proj-concepts">
+                <span class="concepts-label">Platform Objectives:</span>
+                <div class="concepts-tags">
+                  <span class="c-tag">EdTech System</span>
+                  <span class="c-tag">User Engagement</span>
+                  <span class="c-tag">Full-Stack Concepts</span>
+                  <span class="c-tag">Opportunity Matching</span>
+                </div>
+              </div>
+
+              <div class="proj-footer">
+                <div class="proj-tech-stack">
+                  <span class="tech-icon-pill">Web Tech</span>
+                  <span class="tech-icon-pill">Frontend Flow</span>
+                  <span class="tech-icon-pill">Education</span>
+                </div>
+                <div class="proj-actions">
+                  <a href="https://github.com/kanu-sheoran/earn-ed" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View Earn-Ed on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 05: NexusAI -->
+          <article class="project-card" data-proj-type="ai">
+            <div class="proj-header-bar">
+              <div class="proj-num">PROJECT_05</div>
+              <span class="proj-badge badge-ai">Artificial Intelligence</span>
+            </div>
+            
+            <div class="proj-content">
+              <h3 class="proj-title">NexusAI — Collaborative AI System</h3>
+              <p class="proj-repo">ShivamSingh266 / nexusai</p>
+              
+              <p class="proj-desc">
+                An AI-focused application developed as part of a collaborative engineering project, exploring intelligent automated workflows, model integration, and assistive capabilities.
+              </p>
+
+              <div class="proj-concepts">
+                <span class="concepts-label">System Aspects:</span>
+                <div class="concepts-tags">
+                  <span class="c-tag">AI Integration</span>
+                  <span class="c-tag">Collaborative Dev</span>
+                  <span class="c-tag">Model Interfacing</span>
+                  <span class="c-tag">Workflow Automation</span>
+                </div>
+              </div>
+
+              <div class="proj-footer">
+                <div class="proj-tech-stack">
+                  <span class="tech-icon-pill">AI Engine</span>
+                  <span class="tech-icon-pill">Python / JS</span>
+                  <span class="tech-icon-pill">APIs</span>
+                </div>
+                <div class="proj-actions">
+                  <a href="https://github.com/ShivamSingh266/nexusai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View NexusAI on GitHub">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>View Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        
+        <div class="section-header-tab">
+          <div class="tab-ear">05 // WORK EXPERIENCE</div>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Professional Experience & <span class="highlight-serif">Impact</span></h2>
+          <p class="section-sub">Delivering scalable web platforms, digital marketing growth, and high-impact partnerships.</p>
+        </div>
+
+        <div class="experience-timeline">
+          
+          <!-- Experience 1: C-Summit 2025 -->
+          <div class="timeline-item featured-exp">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            
+            <div class="timeline-content-card">
+              <div class="exp-card-header">
+                <div>
+                  <span class="exp-role">Freelance Web & Cloud Developer</span>
+                  <h3 class="exp-org">C-Summit 2025</h3>
+                </div>
+                <div class="exp-date-badge">
+                  <span>Feb 2025 – Apr 2025</span>
+                </div>
+              </div>
+
+              <div class="exp-tags-row">
+                <span class="exp-pill">Web Platform Architecture</span>
+                <span class="exp-pill">Cloud Deployment</span>
+                <span class="exp-pill">Fault Isolation</span>
+                <span class="exp-pill">Performance Optimization</span>
+              </div>
+
+              <ul class="exp-bullet-list">
+                <li>
+                  <strong>Web Platform Development:</strong> Designed and deployed C-Summit 2025’s official web platform, translating stakeholder requirements into functional workflows, responsive interfaces, and optimized application features for seamless interaction.
+                </li>
+                <li>
+                  <strong>Cloud Operations & Integration:</strong> Supported cloud deployment and platform operations, ensuring reliable configuration, continuous availability, robust application delivery, and smooth integration of web services across the deployment environment.
+                </li>
+                <li>
+                  <strong>Fault Isolation & Debugging:</strong> Debugged critical application and deployment issues, performing methodical fault isolation to maintain stable platform uptime and high performance under conference traffic.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2: Café 18o'5 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            
+            <div class="timeline-content-card">
+              <div class="exp-card-header">
+                <div>
+                  <span class="exp-role">Digital Marketing Intern</span>
+                  <h3 class="exp-org">Café 18o'5</h3>
+                </div>
+                <div class="exp-date-badge">
+                  <span class="metric-highlight">+50% Social Reach</span>
+                </div>
+              </div>
+
+              <div class="exp-tags-row">
+                <span class="exp-pill">Social Media Management</span>
+                <span class="exp-pill">Content Creation</span>
+                <span class="exp-pill">Brand Promotion</span>
+                <span class="exp-pill">Audience Engagement</span>
+              </div>
+
+              <ul class="exp-bullet-list">
+                <li>
+                  <strong>Campaign Strategy & Content Creation:</strong> Spearheaded digital marketing campaigns, aesthetic visual content creation, and creative copywriting to elevate brand resonance.
+                </li>
+                <li>
+                  <strong>Audience Engagement:</strong> Managed active daily social channels and promotional activities, fostering organic community growth.
+                </li>
+                <li>
+                  <strong>Quantifiable Achievement:</strong> Successfully drove a <strong>+50% increase in social media reach</strong> through structured campaign planning and data-backed content optimization.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 3: TEDxLPU Women 2025 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            
+            <div class="timeline-content-card">
+              <div class="exp-card-header">
+                <div>
+                  <span class="exp-role">Sponsorship & Brand Partnerships Lead</span>
+                  <h3 class="exp-org">TEDxLPU Women 2025</h3>
+                </div>
+                <div class="exp-date-badge">
+                  <span>Leadership Role</span>
+                </div>
+              </div>
+
+              <div class="exp-tags-row">
+                <span class="exp-pill">Sponsorship Outreach</span>
+                <span class="exp-pill">Brand Partnerships</span>
+                <span class="exp-pill">Partnership Proposals</span>
+                <span class="exp-pill">Event Promotion</span>
+              </div>
+
+              <ul class="exp-bullet-list">
+                <li>
+                  <strong>Partnership Strategy:</strong> Formulated comprehensive sponsorship proposals and outreach strategies to secure vital event partnerships and brand support.
+                </li>
+                <li>
+                  <strong>Stakeholder Negotiation:</strong> Led direct communication with corporate sponsors, aligning brand deliverables with conference values and attendee engagement goals.
+                </li>
+                <li>
+                  <strong>Cross-Functional Execution:</strong> Coordinated promotional campaigns with the marketing and event production teams for TEDxLPU Women 2025.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & ACTIVITIES SECTION -->
+    <section id="leadership" class="section leadership-section">
+      <div class="container">
+        
+        <div class="section-header-tab">
+          <div class="tab-ear">06 // CAMPUS IMPACT</div>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Leadership & <span class="highlight-serif">University Activities</span></h2>
+          <p class="section-sub">Driving student life, managing marquee university events, and orchestrating large-scale team operations.</p>
+        </div>
+
+        <div class="leadership-grid">
+          
+          <!-- Wing Card -->
+          <div class="binder-card lpu-card">
+            <div class="card-badge-row">
+              <span class="badge-flag">STUDENT WELFARE WING</span>
+              <span class="badge-org">LPU Division of Youth Affairs</span>
+            </div>
+            
+            <h3 class="lpu-role-title">Department of Youth Capital</h3>
+            <p class="lpu-role-subtitle">Division of Youth Affairs · Student Welfare Wing, Lovely Professional University</p>
+            
+            <p class="lpu-desc">
+              Active student leader facilitating mega university events, coordinating cross-functional student bodies, and executing high-visibility cultural, talent, and youth initiatives.
+            </p>
+
+            <div class="leadership-events-box">
+              <h4 class="box-heading">KEY MARQUEE EVENTS MANAGED:</h4>
+              <div class="event-cards-list">
+                <div class="mini-event-card">
+                  <div class="event-icon">🌟</div>
+                  <div class="event-info">
+                    <strong>Magnitude 2025</strong>
+                    <span>LPU's flagship national-scale university mega-fest</span>
+                  </div>
+                </div>
+                <div class="mini-event-card">
+                  <div class="event-icon">🎭</div>
+                  <div class="event-info">
+                    <strong>Freshmen Talent Search</strong>
+                    <span>University-wide scouting & talent showcase platform</span>
+                  </div>
+                </div>
+                <div class="mini-event-card">
+                  <div class="event-icon">🎙️</div>
+                  <div class="event-info">
+                    <strong>TEDxLPU Women 2025</strong>
+                    <span>Independently organized TED-licensed women's symposium</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Competencies Grid -->
+          <div class="binder-card competencies-card">
+            <div class="card-badge-row">
+              <span class="badge-flag">LEADERSHIP COMPETENCIES</span>
+            </div>
+            
+            <h3 class="competency-title">Core Management Expertise</h3>
+            <p class="competency-desc">Key operational capabilities honed through extensive hands-on event execution:</p>
+            
+            <div class="competencies-grid-items">
+              <div class="comp-box">
+                <span class="comp-emoji">📋</span>
+                <h4>Event Management</h4>
+                <p>Full lifecycle logistics, schedule planning, and venue coordination.</p>
+              </div>
+
+              <div class="comp-box">
+                <span class="comp-emoji">🤝</span>
+                <h4>Team Coordination</h4>
+                <p>Leading student volunteers and delegating responsibilities under pressure.</p>
+              </div>
+
+              <div class="comp-box">
+                <span class="comp-emoji">💼</span>
+                <h4>Brand Partnerships</h4>
+                <p>Crafting value proposals and securing sponsorships from external brands.</p>
+              </div>
+
+              <div class="comp-box">
+                <span class="comp-emoji">📢</span>
+                <h4>Strategic Marketing</h4>
+                <p>Driving on-campus buzz, digital flyers, and audience conversion.</p>
+              </div>
+
+              <div class="comp-box">
+                <span class="comp-emoji">🎙️</span>
+                <h4>Public Communication</h4>
+                <p>Stakeholder address, sponsor liaison, and diplomatic conflict resolution.</p>
+              </div>
+
+              <div class="comp-box">
+                <span class="comp-emoji">🗺️</span>
+                <h4>Event Planning</h4>
+                <p>Risk mitigation, crowd flow management, and stage execution timelines.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERESTS & CREATIVE DIMENSION SECTION -->
+    <section id="interests" class="section interests-section">
+      <div class="container">
+        
+        <div class="section-header-tab">
+          <div class="tab-ear">07 // CREATIVE DIMENSION</div>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="section-title-wrap">
+          <h2 class="section-heading">Creative Pursuits & <span class="highlight-serif">Interests</span></h2>
+          <p class="section-sub">Where analytical computer science meets artistic expression, mindfulness, and multidisciplinary exploration.</p>
+        </div>
+
+        <!-- Polaroid / Moodboard Grid (Reminiscent of uploaded aesthetic reference) -->
+        <div class="moodboard-grid">
+          
+          <div class="polaroid-card">
+            <div class="tape-strip"></div>
+            <div class="polaroid-inner">
+              <div class="polaroid-art art-writing">✍️ 📖</div>
+              <div class="polaroid-caption">
+                <h4>Writing & Journaling</h4>
+                <p>Reflective essays, structured tech thoughts, and mindful journaling.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="polaroid-card tilt-right">
+            <div class="tape-strip"></div>
+            <div class="polaroid-inner">
+              <div class="polaroid-art art-poetry">✒️ 📜</div>
+              <div class="polaroid-caption">
+                <h4>Poetry & Verse</h4>
+                <p>Expressive storytelling exploring nuance, rhythm, and emotion.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="polaroid-card tilt-left">
+            <div class="tape-strip"></div>
+            <div class="polaroid-inner">
+              <div class="polaroid-art art-drawing">🎨 ✏️</div>
+              <div class="polaroid-caption">
+                <h4>Drawing & Visual Art</h4>
+                <p>Sketching concepts, layout compositions, and visual exploration.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="polaroid-card">
+            <div class="tape-strip"></div>
+            <div class="polaroid-inner">
+              <div class="polaroid-art art-craft">🏺 ✂️</div>
+              <div class="polaroid-caption">
+                <h4>Clay & Handcraft</h4>
+                <p>Tactile sculpting, pottery forms, and handmade physical crafts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="polaroid-card tilt-right">
+            <div class="tape-strip"></div>
+            <div class="polaroid-inner">
+              <div class="polaroid-art art-gaming">🎮 🕹️</div>
+              <div class="polaroid-caption">
+                <h4>Gaming</h4>
+                <p>Exploring game narratives, level design, and interactive UI systems.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="polaroid-card tilt-left">
+            <div class="tape-strip"></div>
+            <div class="polaroid-inner">
+              <div class="polaroid-art art-languages">🌍 🗣️</div>
+              <div class="polaroid-caption">
+                <h4>Language Learning</h4>
+                <p>Polyglot journey: Fluent in English & Hindi, currently learning Spanish & German.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header-tab">
+          <div class="tab-ear">08 // TRANSMISSION</div>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="contact-dossier-wrapper">
+          <div class="contact-tabs-top">
+            <span class="contact-badge">GET_IN_TOUCH.sh</span>
+            <span class="contact-sub-badge">DIRECT TRANSMISSION</span>
+          </div>
+
+          <div class="contact-inner-grid">
+            
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+              <span class="pill-badge pill-blue">Let's Collaborate</span>
+              <h2 class="contact-main-heading">Let's build something <span class="highlight-serif">extraordinary</span> together.</h2>
+              
+              <p class="contact-intro">
+                Whether you're looking to discuss cloud infrastructure, front-end software, freelance projects, sponsorships, or just want to talk about creative tech and poetry — my inbox is always open.
+              </p>
+
+              <div class="direct-contact-cards">
+                
+                <!-- Email Card with Copy button -->
+                <div class="channel-card email-channel">
+                  <div class="channel-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">DIRECT EMAIL</span>
+                    <a href="mailto:kanu081106@gmail.com" class="channel-value" id="emailText">kanu081106@gmail.com</a>
+                  </div>
+                  <button id="copyEmailBtn" class="copy-action-btn" title="Copy email address" aria-label="Copy email address">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    <span class="copy-text">Copy</span>
+                  </button>
+                </div>
+
+                <!-- GitHub Channel -->
+                <a href="https://github.com/kanu-sheoran" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">GITHUB REPOSITORIES</span>
+                    <span class="channel-value">github.com/kanu-sheoran</span>
+                  </div>
+                  <div class="channel-arrow">→</div>
+                </a>
+
+                <!-- LinkedIn Channel -->
+                <a href="https://www.linkedin.com/in/kanu-sheoran/" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </div>
+                  <div class="channel-details">
+                    <span class="channel-label">PROFESSIONAL NETWORK</span>
+                    <span class="channel-value">linkedin.com/in/kanu-sheoran</span>
+                  </div>
+                  <div class="channel-arrow">→</div>
+                </a>
+
+              </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <div class="contact-form-panel">
+              <div class="form-stamp-badge">QUICK DISPATCH</div>
+              <h3 class="form-title">Send a Direct Message</h3>
+              
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="formName">Your Name *</label>
+                  <input type="text" id="formName" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                  <span class="input-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="formEmail">Your Email *</label>
+                  <input type="email" id="formEmail" name="email" class="form-input" placeholder="e.g. alex@company.com" required>
+                  <span class="input-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="formSubject">Subject / Interest Area</label>
+                  <select id="formSubject" name="subject" class="form-select">
+                    <option value="General Inquiry">General Inquiry / Say Hello</option>
+                    <option value="Web & Cloud Project">Web & Cloud Project Collaboration</option>
+                    <option value="Internship / Opportunity">Internship / Job Opportunity</option>
+                    <option value="Sponsorship & Speaking">Sponsorship / Campus Initiative</option>
+                    <option value="Creative & Design">Creative Design & Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="formMessage">Message *</label>
+                  <textarea id="formMessage" name="message" rows="5" class="form-textarea" placeholder="Tell me about your project, idea, or collaboration..." required></textarea>
+                  <span class="input-error" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+                
+                <div id="formSuccessMessage" class="form-success-banner" style="display: none;">
+                  <span>✓ Thank you! Your message client has been prepared. I'll get back to you promptly!</span>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-branding">
+          <span class="footer-brand-title">KANU SHEORAN</span>
+          <p class="footer-brand-sub">B.Tech Computer Science Engineering (Cloud Computing) · Lovely Professional University</p>
+          <div class="footer-pill-row">
+            <span class="tag-pill">Code</span>
+            <span class="tag-pill">Cloud</span>
+            <span class="tag-pill">Creativity</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Experience</h4>
+          <ul class="footer-links-list">
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#leadership">Campus Leadership</a></li>
+            <li><a href="#interests">Interests & Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://github.com/kanu-sheoran" target="_blank" rel="noopener noreferrer">GitHub: @kanu-sheoran</a></li>
+            <li><a href="https://www.linkedin.com/in/kanu-sheoran/" target="_blank" rel="noopener noreferrer">LinkedIn: Kanu Sheoran</a></li>
+            <li><a href="mailto:kanu081106@gmail.com">kanu081106@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          © <span id="currentYear">2025</span> Kanu Sheoran. Crafted with semantic HTML, modern CSS, and vanilla JS.
+        </p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copy Email -->
+  <div id="toastNotification" class="toast-notification" role="status" aria-live="polite">
+    <span class="toast-icon">📋</span>
+    <span class="toast-message" id="toastMessage">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Interactive Confetti Canvas -->
+  <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
