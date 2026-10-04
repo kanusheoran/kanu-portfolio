@@ -5,7 +5,6 @@
 
 Designed with a **tactile editorial folder-tab & dossier aesthetic**, balancing systems engineering with creative storytelling.
 
----
 
 ## 🌟 Highlights & Features
 
@@ -17,7 +16,7 @@ Designed with a **tactile editorial folder-tab & dossier aesthetic**, balancing 
 - **Ultra-Lightweight & Zero-Build**: Built purely with semantic HTML5, modern CSS3 (custom properties, flexbox, CSS grid, container queries), and vanilla JavaScript. No node build steps required to run or deploy!
 - **Fully Responsive & Accessible**: Optimized for mobile screens, tablets, and high-DPI desktop displays.
 
----
+
 
 ## 📁 Project Structure
 
